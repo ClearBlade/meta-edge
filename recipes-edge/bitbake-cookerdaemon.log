@@ -1,0 +1,574 @@
+--- Starting bitbake server pid 31745 at 2018-11-07 22:09:12.594200 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 31745
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'dump_signatures': [], 'profile': False, 'dry_run': False, 'verbose': False, 'debug': 0, 'extra_assume_provided': [], 'abort': True, 'debug_domains': [], 'invalidate_stamp': None, 'server_timeout': None, 'force': False, 'prefile': [], 'postfile': []}, {'LANG': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86', 'SSH_TTY': '/dev/pts/0', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'SSH_CLIENT': '173.194.101.224 51556 22', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'SSH_AUTH_SOCK': '/tmp/ssh-yuCJEAjsfi/agent.26151', 'SHELL': '/bin/bash', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'HOME': '/home/justinmnguyen1', 'LC_ALL': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'MAIL': '/var/mail/justinmnguyen1', 'SSH_CONNECTION': '173.194.101.224 51556 10.128.0.24 22', 'LOGNAME': 'justinmnguyen1', 'USER': 'justinmnguyen1', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'SHLVL': '1'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-b', '-o', 'edgex86.bb', '-x', '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-linux-386.tar.gz']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TMPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TCLIBCAPPEND']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILES']
+Running command ['updateConfig', {'dump_signatures': [], 'profile': False, 'dry_run': False, 'verbose': False, 'debug': 0, 'extra_assume_provided': [], 'abort': True, 'debug_domains': [], 'invalidate_stamp': None, 'server_timeout': None, 'force': False, 'prefile': [], 'postfile': []}, {'LANG': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86', 'SSH_TTY': '/dev/pts/0', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'SSH_CLIENT': '173.194.101.224 51556 22', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'SSH_AUTH_SOCK': '/tmp/ssh-yuCJEAjsfi/agent.26151', 'SHELL': '/bin/bash', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'HOME': '/home/justinmnguyen1', 'LC_ALL': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'MAIL': '/var/mail/justinmnguyen1', 'SSH_CONNECTION': '173.194.101.224 51556 10.128.0.24 22', 'LOGNAME': 'justinmnguyen1', 'USER': 'justinmnguyen1', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'SHLVL': '1'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-b', '-o', 'edgex86.bb', '-x', '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-linux-386.tar.gz']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['getVariable', 'BBTARGETS']
+Running command ['parseFiles']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.event.BuildStarted', 'bb.event.BuildCompleted', 'logging.LogRecord', 'bb.event.NoProvider', 'bb.command.CommandCompleted', 'bb.command.CommandFailed', 'bb.build.TaskStarted', 'bb.build.TaskFailed', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.sceneQueueTaskStarted', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished', 'bb.fetch2.MissingChecksumEvent']]
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS']
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS_LINES']
+Running command ['buildTargets', ['tmp-recipetool-msmcny5w'], 'do_unpack']
+[1;29mNOTE[0m: [29mResolving any missing task queue dependencies[0m
+
+Build Configuration:
+BB_VERSION           = "1.37.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-poky-linux"
+MACHINE              = "qemux86"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.5"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+meta-example         = "master:8148d045406cbb2b66a6848ea93371808d206323"
+meta-edge            = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+
+[1;29mNOTE[0m: [29mExecuting RunQueue Tasks[0m
+[1;29mNOTE[0m: [29mTasks Summary: Attempted 2 tasks of which 0 didn't need to be rerun and all succeeded.[0m
+Running command ['findBestProvider', 'tmp-recipetool-msmcny5w']
+Running command ['enableDataTracking']
+Running command ['parseRecipeFile', '/home/justinmnguyen1/poky/meta-edge/recipes-recipetool/recipetool/tmp-recipetool-msmcny5w.bb', True, None]
+Running command ['disableDataTracking']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorGetKeys', 1]
+Running command ['dataStoreConnectorFindVar', 1, 'T']
+Running command ['dataStoreConnectorFindVar', 1, 'WORKDIR']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT_NATIVE']
+Running command ['dataStoreConnectorFindVar', None, 'SRCREV']
+Running command ['dataStoreConnectorFindVar', None, 'FILE']
+Running command ['dataStoreConnectorFindVar', None, '__BBMULTICONFIG']
+Running command ['dataStoreConnectorFindVar', None, 'BP']
+Running command ['dataStoreConnectorFindVar', None, 'BPN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_data', [('_remote_data', {'_content': None})]), ('SRCREV', {'_content': '${AUTOREV}', '_defaultval': 'INVALID', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.'})], 'BPN', "oe.utils.prune_suffix(d.getVar('PN'), d.getVar('SPECIAL_PKGSUFFIX').split(), d)"]
+Running command ['dataStoreConnectorFindVar', None, 'PV']
+Running command ['dataStoreConnectorExpandPythonRef', [('_data', [('_remote_data', {'_content': None})]), ('SRCREV', {'_content': '${AUTOREV}', '_defaultval': 'INVALID', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.'})], 'PV', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[1] or '1.0'"]
+Running command ['dataStoreConnectorFindVar', None, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_data', [('_remote_data', {'_content': None})]), ('SRCREV', {'_content': '${AUTOREV}', '_defaultval': 'INVALID', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.'})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', None, 'SRCDATE_defaultpkgname']
+Running command ['dataStoreConnectorFindVar', None, 'SRCDATE']
+Running command ['dataStoreConnectorFindVar', None, 'DATE']
+Running command ['dataStoreConnectorFindVar', None, 'SRC_URI']
+Running command ['dataStoreConnectorFindVar', None, 'SRC_URI']
+Running command ['dataStoreConnectorFindVar', None, 'FETCHCMD_wget']
+Running command ['dataStoreConnectorFindVar', None, 'DL_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'DL_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'COMMON_LICENSE_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'COREBASE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': None})], 'COREBASE', 'os.path.normpath("/home/justinmnguyen1/poky/meta/../")']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 329 at 2018-11-26 15:01:23.517270 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 329
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'dump_signatures': [], 'prefile': [], 'force': False, 'dry_run': False, 'verbose': False, 'extra_assume_provided': [], 'abort': True, 'server_timeout': None, 'postfile': [], 'invalidate_stamp': None, 'profile': False, 'debug_domains': [], 'debug': 0}, {'MAIL': '/var/mail/justinmnguyen1', 'USER': 'justinmnguyen1', 'LOGNAME': 'justinmnguyen1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_TTY': '/dev/pts/0', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'TMUX_PANE': '%0', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86-64', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'TERM': 'screen', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'SHELL': '/bin/bash', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'LC_ALL': 'en_US.UTF-8', 'SHLVL': '2', 'HOME': '/home/justinmnguyen1', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'SSH_CLIENT': '74.125.45.161 34614 22', 'LANG': 'en_US.UTF-8', 'BBPATH': '/home/justinmnguyen1/poky/build'}, ['/home/justinmnguyen1/poky/scripts/recipetool']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 340 at 2018-11-26 15:01:39.136046 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 340
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'debug_domains': [], 'debug': 0, 'verbose': False, 'dry_run': False, 'force': False, 'dump_signatures': [], 'prefile': [], 'extra_assume_provided': [], 'profile': False, 'abort': True, 'invalidate_stamp': None, 'postfile': [], 'server_timeout': None}, {'TMUX_PANE': '%0', 'TERM': 'screen', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'LC_ALL': 'en_US.UTF-8', 'BBPATH': '/home/justinmnguyen1/poky/build', 'HOME': '/home/justinmnguyen1', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86-64', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'SHELL': '/bin/bash', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'MAIL': '/var/mail/justinmnguyen1', 'SHLVL': '2', 'USER': 'justinmnguyen1', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LANG': 'en_US.UTF-8', 'LOGNAME': 'justinmnguyen1', 'SSH_CLIENT': '74.125.45.161 34614 22', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 363 at 2018-11-26 15:04:10.013585 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 363
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'invalidate_stamp': None, 'dump_signatures': [], 'postfile': [], 'verbose': False, 'profile': False, 'dry_run': False, 'force': False, 'extra_assume_provided': [], 'abort': True, 'prefile': [], 'debug': 0, 'server_timeout': None, 'debug_domains': []}, {'TERM': 'screen', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86-64', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LOGNAME': 'justinmnguyen1', 'SHELL': '/bin/bash', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'LANG': 'en_US.UTF-8', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'MAIL': '/var/mail/justinmnguyen1', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'TMUX_PANE': '%0', 'SHLVL': '2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'LC_ALL': 'en_US.UTF-8', 'USER': 'justinmnguyen1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_CLIENT': '74.125.45.161 34614 22', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'SSH_TTY': '/dev/pts/0', 'HOME': '/home/justinmnguyen1'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64', '-x', ':', 'Logfile', 'of', 'failure', 'stored', 'in:', '/home/justinmnguyen1/poky/build/tmp/work/core2-64-poky-linux/edgex86-64/1.0-r0/temp/log.do_package_qa.14545']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 376 at 2018-11-26 15:04:45.568211 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 376
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'extra_assume_provided': [], 'force': False, 'invalidate_stamp': None, 'prefile': [], 'abort': True, 'dump_signatures': [], 'verbose': False, 'debug_domains': [], 'debug': 0, 'dry_run': False, 'profile': False, 'server_timeout': None, 'postfile': []}, {'SSH_CLIENT': '74.125.45.161 34614 22', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'TMUX_PANE': '%0', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'SHLVL': '2', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'LC_ALL': 'en_US.UTF-8', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LANG': 'en_US.UTF-8', 'SSH_TTY': '/dev/pts/0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'LOGNAME': 'justinmnguyen1', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'USER': 'justinmnguyen1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'MAIL': '/var/mail/justinmnguyen1', 'TERM': 'screen', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86-64', 'HOME': '/home/justinmnguyen1', 'SHELL': '/bin/bash'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64', '-x', '.', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TMPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TCLIBCAPPEND']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILES']
+Running command ['updateConfig', {'extra_assume_provided': [], 'force': False, 'invalidate_stamp': None, 'prefile': [], 'abort': True, 'dump_signatures': [], 'verbose': False, 'debug_domains': [], 'debug': 0, 'dry_run': False, 'profile': False, 'server_timeout': None, 'postfile': []}, {'SSH_CLIENT': '74.125.45.161 34614 22', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'TMUX_PANE': '%0', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'SHLVL': '2', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'LC_ALL': 'en_US.UTF-8', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LANG': 'en_US.UTF-8', 'SSH_TTY': '/dev/pts/0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'LOGNAME': 'justinmnguyen1', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'USER': 'justinmnguyen1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'MAIL': '/var/mail/justinmnguyen1', 'TERM': 'screen', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgex86-64', 'HOME': '/home/justinmnguyen1', 'SHELL': '/bin/bash'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64', '-x', '.', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['getVariable', 'BBTARGETS']
+Running command ['parseFiles']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.event.BuildStarted', 'bb.event.BuildCompleted', 'logging.LogRecord', 'bb.event.NoProvider', 'bb.command.CommandCompleted', 'bb.command.CommandFailed', 'bb.build.TaskStarted', 'bb.build.TaskFailed', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.sceneQueueTaskStarted', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished', 'bb.fetch2.MissingChecksumEvent']]
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS']
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS_LINES']
+Running command ['buildTargets', ['tmp-recipetool-ncnwm5sh'], 'do_unpack']
+[1;29mNOTE[0m: [29mResolving any missing task queue dependencies[0m
+
+Build Configuration:
+BB_VERSION           = "1.37.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.5"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+meta-example         = "master:8148d045406cbb2b66a6848ea93371808d206323"
+meta-edge            = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+
+[1;29mNOTE[0m: [29mExecuting RunQueue Tasks[0m
+[1;29mNOTE[0m: [29mTasks Summary: Attempted 2 tasks of which 0 didn't need to be rerun and all succeeded.[0m
+Running command ['findBestProvider', 'tmp-recipetool-ncnwm5sh']
+Running command ['enableDataTracking']
+Running command ['parseRecipeFile', '/home/justinmnguyen1/poky/meta-edge/recipes-recipetool/recipetool/tmp-recipetool-ncnwm5sh.bb', True, None]
+Running command ['disableDataTracking']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorGetKeys', 1]
+Running command ['dataStoreConnectorFindVar', 1, 'T']
+Running command ['dataStoreConnectorFindVar', 1, 'WORKDIR']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT_NATIVE']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 532 at 2018-11-26 15:09:42.302186 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 532
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'server_timeout': None, 'abort': True, 'force': False, 'debug_domains': [], 'debug': 0, 'verbose': False, 'dry_run': False, 'profile': False, 'dump_signatures': [], 'prefile': [], 'invalidate_stamp': None, 'extra_assume_provided': [], 'postfile': []}, {'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TMUX_PANE': '%0', 'SHLVL': '2', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'SSH_CLIENT': '74.125.45.161 34614 22', 'LC_ALL': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'USER': 'justinmnguyen1', 'HOME': '/home/justinmnguyen1', 'LOGNAME': 'justinmnguyen1', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'TERM': 'screen', 'MAIL': '/var/mail/justinmnguyen1', 'SHELL': '/bin/bash', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'LANG': 'en_US.UTF-8', 'BBPATH': '/home/justinmnguyen1/poky/build'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64', '-x', '.', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TMPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TCLIBCAPPEND']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILES']
+Running command ['updateConfig', {'server_timeout': None, 'abort': True, 'force': False, 'debug_domains': [], 'debug': 0, 'verbose': False, 'dry_run': False, 'profile': False, 'dump_signatures': [], 'prefile': [], 'invalidate_stamp': None, 'extra_assume_provided': [], 'postfile': []}, {'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TMUX_PANE': '%0', 'SHLVL': '2', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'SSH_CLIENT': '74.125.45.161 34614 22', 'LC_ALL': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'USER': 'justinmnguyen1', 'HOME': '/home/justinmnguyen1', 'LOGNAME': 'justinmnguyen1', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'TERM': 'screen', 'MAIL': '/var/mail/justinmnguyen1', 'SHELL': '/bin/bash', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'LANG': 'en_US.UTF-8', 'BBPATH': '/home/justinmnguyen1/poky/build'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64', '-x', '.', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['getVariable', 'BBTARGETS']
+Running command ['parseFiles']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.event.BuildStarted', 'bb.event.BuildCompleted', 'logging.LogRecord', 'bb.event.NoProvider', 'bb.command.CommandCompleted', 'bb.command.CommandFailed', 'bb.build.TaskStarted', 'bb.build.TaskFailed', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.sceneQueueTaskStarted', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished', 'bb.fetch2.MissingChecksumEvent']]
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS']
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS_LINES']
+Running command ['buildTargets', ['tmp-recipetool-bokry3m6'], 'do_unpack']
+[1;29mNOTE[0m: [29mResolving any missing task queue dependencies[0m
+
+Build Configuration:
+BB_VERSION           = "1.37.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.5"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+meta-example         = "master:8148d045406cbb2b66a6848ea93371808d206323"
+meta-edge            = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+
+[1;29mNOTE[0m: [29mExecuting RunQueue Tasks[0m
+[1;29mNOTE[0m: [29mTasks Summary: Attempted 2 tasks of which 0 didn't need to be rerun and all succeeded.[0m
+Running command ['findBestProvider', 'tmp-recipetool-bokry3m6']
+Running command ['enableDataTracking']
+Running command ['parseRecipeFile', '/home/justinmnguyen1/poky/meta-edge/recipes-recipetool/recipetool/tmp-recipetool-bokry3m6.bb', True, None]
+Running command ['disableDataTracking']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorGetKeys', 1]
+Running command ['dataStoreConnectorFindVar', 1, 'T']
+Running command ['dataStoreConnectorFindVar', 1, 'WORKDIR']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT_NATIVE']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 979 at 2018-11-26 15:14:51.650466 ---
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Started bitbake server pid 979
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2, 1]]
+Running command ['updateConfig', {'force': False, 'dump_signatures': [], 'server_timeout': None, 'postfile': [], 'verbose': False, 'abort': True, 'dry_run': False, 'debug': 0, 'invalidate_stamp': None, 'prefile': [], 'profile': False, 'extra_assume_provided': [], 'debug_domains': []}, {'BUILDDIR': '/home/justinmnguyen1/poky/build', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'BBPATH': '/home/justinmnguyen1/poky/build', 'SSH_TTY': '/dev/pts/0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/justinmnguyen1', 'TERM': 'screen', 'SHELL': '/bin/bash', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'SSH_CLIENT': '74.125.45.161 34614 22', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'LOGNAME': 'justinmnguyen1', 'LC_ALL': 'en_US.UTF-8', 'HOME': '/home/justinmnguyen1', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'LANG': 'en_US.UTF-8', 'USER': 'justinmnguyen1', 'TMUX_PANE': '%0', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'SHLVL': '2', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64.bb', '-x', '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz', '-b']]
+[1;33mWARNING[0m: [33mLayer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+[1;33mWARNING[0m: [33mLayer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.[0m
+Running command ['parseConfiguration']
+Running command ['dataStoreConnectorFindVar', None, 'BBPATH']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TMPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'TCLIBCAPPEND']
+Running command ['dataStoreConnectorFindVar', None, 'BASE_WORKDIR']
+Running command ['dataStoreConnectorFindVar', None, 'BBFILES']
+Running command ['updateConfig', {'force': False, 'dump_signatures': [], 'server_timeout': None, 'postfile': [], 'verbose': False, 'abort': True, 'dry_run': False, 'debug': 0, 'invalidate_stamp': None, 'prefile': [], 'profile': False, 'extra_assume_provided': [], 'debug_domains': []}, {'BUILDDIR': '/home/justinmnguyen1/poky/build', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'BBPATH': '/home/justinmnguyen1/poky/build', 'SSH_TTY': '/dev/pts/0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/justinmnguyen1', 'TERM': 'screen', 'SHELL': '/bin/bash', '_': '/home/justinmnguyen1/poky/scripts/recipetool', 'SSH_CLIENT': '74.125.45.161 34614 22', 'SSH_AUTH_SOCK': '/tmp/ssh-n5QsDV6sgr/agent.24060', 'LOGNAME': 'justinmnguyen1', 'LC_ALL': 'en_US.UTF-8', 'HOME': '/home/justinmnguyen1', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'LANG': 'en_US.UTF-8', 'USER': 'justinmnguyen1', 'TMUX_PANE': '%0', 'TMUX': '/tmp/tmux-1006/default,32495,0', 'SHLVL': '2', 'SSH_CONNECTION': '74.125.45.161 34614 10.128.0.24 22', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64'}, ['/home/justinmnguyen1/poky/scripts/recipetool', 'create', '-o', 'edgeamd64.bb', '-x', '/home/justinmnguyen1/poky/meta-edge/recipes-edge/edgeamd64', 'https://github.com/ClearBlade/Edge/releases/download/4.3.4/edge-darwin-amd64.tar.gz', '-b']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['getVariable', 'BBTARGETS']
+Running command ['parseFiles']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.event.BuildStarted', 'bb.event.BuildCompleted', 'logging.LogRecord', 'bb.event.NoProvider', 'bb.command.CommandCompleted', 'bb.command.CommandFailed', 'bb.build.TaskStarted', 'bb.build.TaskFailed', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.sceneQueueTaskStarted', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished', 'bb.fetch2.MissingChecksumEvent']]
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS']
+Running command ['dataStoreConnectorFindVar', None, 'BBINCLUDELOGS_LINES']
+Running command ['buildTargets', ['tmp-recipetool-0x6nl8fl'], 'do_unpack']
+[1;29mNOTE[0m: [29mResolving any missing task queue dependencies[0m
+
+Build Configuration:
+BB_VERSION           = "1.37.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.5"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+meta-example         = "master:8148d045406cbb2b66a6848ea93371808d206323"
+meta-edge            = "my-yocto-2.5:da3625c52e1ab8985fba4fc3d133edf92142f182"
+
+[1;29mNOTE[0m: [29mExecuting RunQueue Tasks[0m
+[1;29mNOTE[0m: [29mTasks Summary: Attempted 2 tasks of which 0 didn't need to be rerun and all succeeded.[0m
+Running command ['findBestProvider', 'tmp-recipetool-0x6nl8fl']
+Running command ['enableDataTracking']
+Running command ['parseRecipeFile', '/home/justinmnguyen1/poky/meta-edge/recipes-recipetool/recipetool/tmp-recipetool-0x6nl8fl.bb', True, None]
+Running command ['disableDataTracking']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'OVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'TARGET_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'LIBCEXTENSION', "['', '-gnu'][(d.getVar('ABIEXTENSION') or '') != '']"]
+Running command ['dataStoreConnectorFindVar', 1, 'ABIEXTENSION']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'ABIEXTENSION', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x32', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'TRANSLATED_TARGET_ARCH']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'TRANSLATED_TARGET_ARCH', 'd.getVar(\'TARGET_ARCH\').replace("_", "-")']
+Running command ['dataStoreConnectorFindVar', 1, 'BUILD_OS']
+Running command ['dataStoreConnectorFindVar', 1, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINEOVERRIDES']
+Running command ['dataStoreConnectorFindVar', 1, 'MACHINE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'mx32', 'x86-x32:', '' ,d)"]
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'MACHINEOVERRIDES', "bb.utils.contains('TUNE_FEATURES', 'm32', 'x86:', '' ,d)"]
+Running command ['dataStoreConnectorFindVar', 1, 'DISTROOVERRIDES']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': 1})], 'DISTROOVERRIDES', "d.getVar('DISTRO') or ''"]
+Running command ['dataStoreConnectorFindVar', 1, 'CLASSOVERRIDE']
+Running command ['dataStoreConnectorFindVar', 1, 'LIBCOVERRIDE']
+Running command ['dataStoreConnectorGetKeys', 1]
+Running command ['dataStoreConnectorFindVar', 1, 'T']
+Running command ['dataStoreConnectorFindVar', 1, 'WORKDIR']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT']
+Running command ['dataStoreConnectorFindVar', 1, 'RECIPE_SYSROOT_NATIVE']
+Running command ['dataStoreConnectorFindVar', None, 'SRCREV']
+Running command ['dataStoreConnectorFindVar', None, 'FILE']
+Running command ['dataStoreConnectorFindVar', None, '__BBMULTICONFIG']
+Running command ['dataStoreConnectorFindVar', None, 'BP']
+Running command ['dataStoreConnectorFindVar', None, 'BPN']
+Running command ['dataStoreConnectorExpandPythonRef', [('SRCREV', {'_content': '${AUTOREV}', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.', '_defaultval': 'INVALID'}), ('_data', [('_remote_data', {'_content': None})])], 'BPN', "oe.utils.prune_suffix(d.getVar('PN'), d.getVar('SPECIAL_PKGSUFFIX').split(), d)"]
+Running command ['dataStoreConnectorFindVar', None, 'PV']
+Running command ['dataStoreConnectorExpandPythonRef', [('SRCREV', {'_content': '${AUTOREV}', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.', '_defaultval': 'INVALID'}), ('_data', [('_remote_data', {'_content': None})])], 'PV', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[1] or '1.0'"]
+Running command ['dataStoreConnectorFindVar', None, 'PN']
+Running command ['dataStoreConnectorExpandPythonRef', [('SRCREV', {'_content': '${AUTOREV}', 'doc': 'The revision of the source code used to build the package. This variable applies to Subversion, Git, Mercurial and Bazaar only.', '_defaultval': 'INVALID'}), ('_data', [('_remote_data', {'_content': None})])], 'PN', "bb.parse.BBHandler.vars_from_file(d.getVar('FILE', False),d)[0] or 'defaultpkgname'"]
+Running command ['dataStoreConnectorFindVar', None, 'SRCDATE_defaultpkgname']
+Running command ['dataStoreConnectorFindVar', None, 'SRCDATE']
+Running command ['dataStoreConnectorFindVar', None, 'DATE']
+Running command ['dataStoreConnectorFindVar', None, 'SRC_URI']
+Running command ['dataStoreConnectorFindVar', None, 'SRC_URI']
+Running command ['dataStoreConnectorFindVar', None, 'FETCHCMD_wget']
+Running command ['dataStoreConnectorFindVar', None, 'DL_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'TOPDIR']
+Running command ['dataStoreConnectorFindVar', None, 'DL_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'COMMON_LICENSE_DIR']
+Running command ['dataStoreConnectorFindVar', None, 'COREBASE']
+Running command ['dataStoreConnectorExpandPythonRef', [('_remote_data', {'_content': None})], 'COREBASE', 'os.path.normpath("/home/justinmnguyen1/poky/meta/../")']
+Running command ['clientComplete']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 23583 at 2018-12-11 16:47:30.390679 ---
+Started bitbake server pid 23583
+WARNING: Layer example should set LAYERSERIES_COMPAT_example in its conf/layer.conf file to list the core layer names it is compatible with.
+WARNING: Layer meta-edge should set LAYERSERIES_COMPAT_meta-edge in its conf/layer.conf file to list the core layer names it is compatible with.
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'dump_signatures': [], 'extra_assume_provided': [], 'abort': True, 'debug_domains': [], 'invalidate_stamp': None, 'prefile': [], 'dry_run': False, 'server_timeout': None, 'verbose': False, 'debug': 0, 'postfile': [], 'profile': False, 'force': False}, {'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'BUILDDIR': '/home/justinmnguyen1/poky/build', 'BBPATH': '/home/justinmnguyen1/poky/build', 'LC_ALL': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'PWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge', 'MAIL': '/var/mail/justinmnguyen1', 'SSH_CONNECTION': '74.125.45.161 58936 10.128.0.24 22', '_': '/home/justinmnguyen1/poky/bitbake/bin/bitbake', 'LANG': 'en_US.UTF-8', 'HOME': '/home/justinmnguyen1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CLIENT': '74.125.45.161 58936 22', 'SSH_AUTH_SOCK': '/tmp/ssh-LP93Fuvghp/agent.27341', 'SHLVL': '2', 'TMUX_PANE': '%0', 'TMUX': '/tmp/tmux-1006/default,10840,0', 'LOGNAME': 'justinmnguyen1', 'PATH': '/home/justinmnguyen1/poky/scripts:/home/justinmnguyen1/poky/bitbake/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games', 'USER': 'justinmnguyen1', 'OLDPWD': '/home/justinmnguyen1/poky/meta-edge/recipes-edge/service', 'SSH_TTY': '/dev/pts/0', 'TERM': 'screen'}, ['/home/justinmnguyen1/poky/bitbake/bin/bitbake', 'edgetest']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['edgetest'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting

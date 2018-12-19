@@ -1,0 +1,16 @@
+[Unit]
+Description="clearblade.service" Version: "4.3.4"
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart="usr/local/bin/edge" -db=sqlite -sqlite-path=./edge.db -sqlite-path-users=./edgeusers.db -edge-id="unprovisioned" -edge-ip="localhost" -novi-ip="localhost" -edge-cookie="null" -platform-port="1883" -parent-system="null" -log-level=debug -provisioning-mode=true -provisioning-system=a089a6a80bc2add5fbd6b3e7b08101
+Restart=on-abort
+TimeoutSec=30
+RestartSec=30
+StartLimitInterval=350
+StartLimitBurst=10
+
+[Install]
+WantedBy=multi-user.target
