@@ -43,7 +43,8 @@ do_compile() - any compilation steps need for the source uri, if no compilation 
 
 do_install() - function to install the source code in to the image, usually done by first creating a directory and copying it over in to the image
 
-```do_install(){
+```
+do_install(){
         install -d $[D}/usr/local/bin
         install -m 0755 ${S} ${D}/usr/local/bin
    }
